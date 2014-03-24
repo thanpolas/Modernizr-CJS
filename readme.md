@@ -32,6 +32,36 @@ cookies(function(result) {
 });
 ```
 
+### Running Multiple tests
+
+A new module has been created to run multiple tests, require the `src/cjsTestRunner` module and invoke like so:
+
+```js
+
+var testRunner = require('modernizr-cjs/src/cjsTestRunner');
+
+var tests = {
+  es5array: require('modernizr-cjs/feature-detects/es5/array'),
+  es5date: require('modernizr-cjs/feature-detects/es5/date'),
+  es5function: require('modernizr-cjs/feature-detects/es5/function'),
+  es5object: require('modernizr-cjs/feature-detects/es5/object'),
+  es5strictmode: require('modernizr-cjs/feature-detects/es5/strictmode'),
+  es5string: require('modernizr-cjs/feature-detects/es5/string')
+};
+
+testRunner([
+  tests.es5array,
+  tests.es5date,
+  tests.es5function,
+  tests.es5object,
+  tests.es5strictmode,
+  tests.es5string
+], function(results) {
+  console.log(results);
+  typeof results.es5string === 'boolean'; // true
+});
+```
+
 ## Ported Tests
 
 The following tests have been ported to be CJS modules:
@@ -55,3 +85,9 @@ The following tests have been ported to be CJS modules:
 
 Pull Requests welcome...
 
+## Release History
+
+- **v3.0.3**, *25 Mar 2014*
+    - Introduced the `cjsTestRunner` module.
+- **v3.0.2**, *24 Mar 2014*
+    - Big Bang.
