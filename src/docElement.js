@@ -1,4 +1,1 @@
-module.exports = function() {
-  var docElement = document.documentElement;
-  return docElement;
-};
+module.exports = document.documentElement;

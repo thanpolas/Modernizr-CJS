@@ -87,7 +87,7 @@ Pull Requests welcome...
 
 ## Release History
 
-- **v3.0.4**, *25 Mar 2014*
+- **v3.0.5**, *25 Mar 2014*
     - Introduced the `cjsTestRunner` module.
 - **v3.0.2**, *24 Mar 2014*
     - Big Bang.

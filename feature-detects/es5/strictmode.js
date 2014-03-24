@@ -14,7 +14,7 @@
 /* DOC
 Check if browser implements ECMAScript 5 Object strict mode.
 */
-var test = module.exports = function() {
+var test = module.exports = function(cb) {
   cb(function(){'use strict'; return !this; }());
 };
 
