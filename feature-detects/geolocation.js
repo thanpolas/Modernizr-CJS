@@ -20,7 +20,7 @@
 /* DOC
 Detects support for the Geolocation API for users to provide their location to web applications.
 */
-define(['Modernizr'], function( Modernizr ) {
+module.exports = function(cb) {
   // geolocation is often considered a trivial feature detect...
   // Turns out, it's quite tricky to get right:
   //
@@ -31,5 +31,5 @@ define(['Modernizr'], function( Modernizr ) {
   // Meanwhile, in Firefox < 8, an about:config setting could expose
   // a false positive that would throw an exception: bugzil.la/688158
 
-  Modernizr.addTest('geolocation', 'geolocation' in navigator);
-});
+  cb('geolocation' in navigator);
+};
