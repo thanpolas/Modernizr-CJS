@@ -13,7 +13,7 @@ If you want to just add Modernizr to your website then please go to http://moder
 use NPM
 
 ```shell
-npm install Modernizr-CJS --save-dev
+npm install modernizr-cjs --save-dev
 ```
 
 ## How to use
