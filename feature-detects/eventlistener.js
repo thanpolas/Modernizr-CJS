@@ -13,6 +13,6 @@
 /* DOC
 Detects native support for addEventListener
 */
-define(['Modernizr'], function( Modernizr ) {
-  Modernizr.addTest('eventlistener', 'addEventListener' in window);
-});
+module.exports = function(cb) {
+  cb('addEventListener' in window);
+};

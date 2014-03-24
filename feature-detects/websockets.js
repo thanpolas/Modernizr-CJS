@@ -24,6 +24,6 @@
   ]
 }
 !*/
-define(['Modernizr'], function( Modernizr ) {
-  Modernizr.addTest('websockets', 'WebSocket' in window && window.WebSocket.CLOSING === 2);
-});
+module.exports = function(cb) {
+  cb('WebSocket' in window && window.WebSocket.CLOSING === 2);
+};
