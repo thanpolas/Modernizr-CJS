@@ -42,6 +42,8 @@ The following tests have been ported to be CJS modules:
 * `feature-detects/es5/object`
 * `feature-detects/es5/strictmode`
 * `feature-detects/es5/string`
+* `feature-detects/file/api` (Filereader test).
+* `feature-detects/file/filesystem`
 * `feature-detects/cookies`
 * `feature-detects/cors`
 * `feature-detects/eventlistener`
