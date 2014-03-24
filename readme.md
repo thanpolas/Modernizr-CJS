@@ -46,6 +46,8 @@ The following tests have been ported to be CJS modules:
 * `feature-detects/cookies`
 * `feature-detects/cors`
 * `feature-detects/eventlistener`
+* `feature-detects/flash`
+* `feature-detects/json`
 * `feature-detects/history`
 * `feature-detects/video`
 * `feature-detects/websockets`
