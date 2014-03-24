@@ -14,18 +14,17 @@
 /* DOC
 Check if browser implements ECMAScript 5 Array per specification.
 */
-define(['Modernizr'], function (Modernizr) {
-  Modernizr.addTest('es5array', function () {
-    return !!(Array.prototype &&
-      Array.prototype.every &&
-      Array.prototype.filter &&
-      Array.prototype.forEach &&
-      Array.prototype.indexOf &&
-      Array.prototype.lastIndexOf &&
-      Array.prototype.map &&
-      Array.prototype.some &&
-      Array.prototype.reduce &&
-      Array.prototype.reduceRight &&
-      Array.isArray);
-  });
-});
+module.exports = function (cb) {
+  cb(!!(Array.prototype &&
+    Array.prototype.every &&
+    Array.prototype.filter &&
+    Array.prototype.forEach &&
+    Array.prototype.indexOf &&
+    Array.prototype.lastIndexOf &&
+    Array.prototype.map &&
+    Array.prototype.some &&
+    Array.prototype.reduce &&
+    Array.prototype.reduceRight &&
+    Array.isArray)
+  );
+};

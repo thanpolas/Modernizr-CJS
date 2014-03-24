@@ -14,6 +14,6 @@
 /* DOC
 Check if browser implements ECMAScript 5 Object strict mode.
 */
-define(['Modernizr'], function( Modernizr ) {
-  Modernizr.addTest('strictmode', (function(){'use strict'; return !this; })());
-});
+module.exports = function() {
+  cb(function(){'use strict'; return !this; })());
+};
