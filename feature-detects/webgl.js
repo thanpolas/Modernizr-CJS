@@ -7,7 +7,7 @@
   "polyfills": ["jebgl", "webglcompat", "cwebgl", "iewebgl"]
 }
 !*/
-var createElement = require('./createElement');
+var createElement = require('../src/createElement');
 
 var test = module.exports = function(cb) {
   var canvas = createElement('canvas');
