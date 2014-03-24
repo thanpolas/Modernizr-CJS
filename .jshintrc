@@ -6,6 +6,7 @@
 
   // Define globals exposed by modern browsers.
   "browser": true,
+  "node": true,
 
   /*
    * TABS AND QUOTES
