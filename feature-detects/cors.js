@@ -14,6 +14,6 @@
 /* DOC
 Detects support for Cross-Origin Resource Sharing: method of performing XMLHttpRequests across domains.
 */
-define(['Modernizr'], function( Modernizr ) {
-  Modernizr.addTest('cors', 'XMLHttpRequest' in window && 'withCredentials' in new XMLHttpRequest());
-});
+module.exports = function(cb) {
+  cb('XMLHttpRequest' in window && 'withCredentials' in new XMLHttpRequest());
+};
