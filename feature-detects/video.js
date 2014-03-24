@@ -29,7 +29,7 @@ Modernizr.video.ogg     // 'probably'
 */
 var createElement = require('../src/createElement');
 
-module.exports = function(cb) {
+var test = module.exports = function(cb) {
   // Codec values from : github.com/NielsLeenheer/html5test/blob/9106a8/index.html#L845
   //                     thx to NielsLeenheer and zcorpan
 
@@ -59,3 +59,5 @@ module.exports = function(cb) {
 
   cb(bool);
 };
+
+test.name = 'video';

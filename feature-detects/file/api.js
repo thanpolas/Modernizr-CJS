@@ -18,6 +18,8 @@ Tests for objects specific to the File API W3C specification without
 being redundant (don't bother testing for Blob since it is assumed
 to be the File object's prototype.)
 */
-module.exports = function(cb) {
+var test = module.exports = function(cb) {
   cb(!!(window.File && window.FileList && window.FileReader));
 };
+
+test.name = 'fileapi';

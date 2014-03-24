@@ -12,7 +12,7 @@ Detects support flash, as well as flash blocking plugins
 var createElement = require('../src/createElement');
 var docElement = require('../src/docElement');
 
-module.exports = function(cb) {
+var test = module.exports = function(cb) {
   /* jshint -W053 */
   var runTest = function(result, embed) {
     var bool = !!result;
@@ -79,3 +79,5 @@ module.exports = function(cb) {
     }, 10);
   }
 };
+
+test.name = 'flash';

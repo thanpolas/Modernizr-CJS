@@ -10,7 +10,7 @@
 Detects whether cookie support is enabled.
 */
 // https://github.com/Modernizr/Modernizr/issues/191
-module.exports = function(cb) {
+var test = module.exports = function(cb) {
   // navigator.cookieEnabled is in IE9 but always true. Don't rely on it.
 
   // try..catch because some in situations `document.cookie` is exposed but throws a
@@ -28,3 +28,5 @@ module.exports = function(cb) {
     cb(false);
   }
 };
+
+test.name = 'cookies';

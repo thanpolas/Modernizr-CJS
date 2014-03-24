@@ -13,6 +13,8 @@
 /* DOC
 Detects native support for addEventListener
 */
-module.exports = function(cb) {
+var test = module.exports = function(cb) {
   cb('addEventListener' in window);
 };
+
+test.name = 'eventlistener';

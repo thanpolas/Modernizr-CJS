@@ -13,8 +13,10 @@
 /* DOC
 Detects native support for JSON handling functions.
 */
-module.exports = function(cb) {
+var test = module.exports = function(cb) {
   // this will also succeed if you've loaded the JSON2.js polyfill ahead of time
   //   ... but that should be obvious. :)
   cb('JSON' in window && 'parse' in JSON);
 };
+
+test.name = 'json';

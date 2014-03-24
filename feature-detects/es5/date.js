@@ -14,7 +14,7 @@
 /* DOC
 Check if browser implements ECMAScript 5 Date per specification.
 */
-module.exports = function(cb) {
+var test = module.exports = function(cb) {
   var isoDate = '2013-04-12T06:06:37.307Z',
     canParseISODate = false;
   try {
@@ -29,3 +29,5 @@ module.exports = function(cb) {
     canParseISODate)
   );
 };
+
+test.name = 'es5date';

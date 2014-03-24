@@ -18,7 +18,7 @@
 /* DOC
 Detects support for the History API for manipulating the browser session history.
 */
-module.exports = function(cb) {
+var test = module.exports = function(cb) {
   // Issue #733
   // The stock browser on Android 2.2 & 2.3, and 4.0.x returns positive on history support
   // Unfortunately support is really buggy and there is no clean way to detect
@@ -37,3 +37,5 @@ module.exports = function(cb) {
   // Return the regular check
   cb(window.history && 'pushState' in window.history);
 };
+
+test.name = 'history';

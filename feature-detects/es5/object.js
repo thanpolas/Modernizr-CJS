@@ -14,7 +14,7 @@
 /* DOC
 Check if browser implements ECMAScript 5 Object per specification.
 */
-module.exports = function(cb) {
+var test = module.exports = function(cb) {
   cb(!!(Object.keys &&
     Object.create &&
     Object.getPrototypeOf &&
@@ -30,3 +30,5 @@ module.exports = function(cb) {
     Object.preventExtensions)
   );
 };
+
+test.name = 'es5object';

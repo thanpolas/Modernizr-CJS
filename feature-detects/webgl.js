@@ -9,7 +9,7 @@
 !*/
 var createElement = require('./createElement');
 
-module.exports = function(cb) {
+var test = module.exports = function(cb) {
   var canvas = createElement('canvas');
   if ('supportsContext' in canvas) {
     cb(canvas.supportsContext('webgl') || canvas.supportsContext('experimental-webgl'));
@@ -17,3 +17,5 @@ module.exports = function(cb) {
   }
   cb(!!window.WebGLRenderingContext);
 };
+
+test.name = 'webgl';

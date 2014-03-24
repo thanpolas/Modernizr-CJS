@@ -14,6 +14,8 @@
 /* DOC
 Check if browser implements ECMAScript 5 String per specification.
 */
-module.exports = function(cb) {
+var test = module.exports = function(cb) {
   cb(!!(String.prototype && String.prototype.trim));
 };
+
+test.name = 'es5string';

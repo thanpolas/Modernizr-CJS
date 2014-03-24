@@ -14,6 +14,8 @@
 /* DOC
 Check if browser implements ECMAScript 5 Function per specification.
 */
-module.exports = function(cb) {
+var test = module.exports = function(cb) {
   cb(!!(Function.prototype && Function.prototype.bind));
 };
+
+test.name = 'es5function';

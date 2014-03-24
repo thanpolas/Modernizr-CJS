@@ -14,6 +14,8 @@
 /* DOC
 Detects support for Cross-Origin Resource Sharing: method of performing XMLHttpRequests across domains.
 */
-module.exports = function(cb) {
+var test = module.exports = function(cb) {
   cb('XMLHttpRequest' in window && 'withCredentials' in new XMLHttpRequest());
 };
+
+test.name = 'cors';

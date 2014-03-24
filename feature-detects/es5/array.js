@@ -14,7 +14,7 @@
 /* DOC
 Check if browser implements ECMAScript 5 Array per specification.
 */
-module.exports = function (cb) {
+var test = module.exports = function (cb) {
   cb(!!(Array.prototype &&
     Array.prototype.every &&
     Array.prototype.filter &&
@@ -28,3 +28,5 @@ module.exports = function (cb) {
     Array.isArray)
   );
 };
+
+test.name = 'es5array';
