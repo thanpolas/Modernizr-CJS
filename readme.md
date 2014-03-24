@@ -24,7 +24,7 @@ Require individual tests with:
 var cookies = require('Modernizr-CJS/feature-detects/cookies');
 ```
 
-All tests are functions with a callback that provide a boolean value:
+All tests are functions with a callback that has as arguments the test outcome.
 
 ```js
 cookies(function(result) {

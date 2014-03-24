@@ -13,6 +13,7 @@
 }
 !*/
 var prefixed = require('../src/prefixed');
+
 module.exports = function(cb) {
   cb(!!prefixed('requestFileSystem', window));
 };
