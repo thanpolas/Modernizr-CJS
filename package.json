@@ -1,6 +1,6 @@
 {
   "name": "modernizr-cjs",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "This is a Modernizr port to CJS for selectively requiring test modules",
   "directories": {
     "test": "test"
