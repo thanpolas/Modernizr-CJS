@@ -50,6 +50,7 @@ The following tests have been ported to be CJS modules:
 * `feature-detects/json`
 * `feature-detects/history`
 * `feature-detects/video`
+* `feature-detects/webgl`
 * `feature-detects/websockets`
 
 Pull Requests welcome...

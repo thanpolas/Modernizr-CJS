@@ -7,12 +7,13 @@
   "polyfills": ["jebgl", "webglcompat", "cwebgl", "iewebgl"]
 }
 !*/
-define(['Modernizr', 'createElement'], function( Modernizr, createElement ) {
-  Modernizr.addTest('webgl', function() {
-    var canvas = createElement('canvas');
-    if ('supportsContext' in canvas) {
-      return canvas.supportsContext('webgl') || canvas.supportsContext('experimental-webgl');
-    }
-    return !!window.WebGLRenderingContext;
-  });
-});
+var createElement = require('./createElement');
+
+module.exports = function(cb) {
+  var canvas = createElement('canvas');
+  if ('supportsContext' in canvas) {
+    cb(canvas.supportsContext('webgl') || canvas.supportsContext('experimental-webgl'));
+    return;
+  }
+  cb(!!window.WebGLRenderingContext);
+};
