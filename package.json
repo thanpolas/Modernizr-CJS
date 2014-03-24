@@ -1,6 +1,6 @@
 {
   "name": "modernizr-cjs",
-  "version": "3.0.0pre",
+  "version": "3.0.0",
   "description": "This is a Modernizr port to CJS for selectively requiring test modules",
   "directories": {
     "test": "test"
@@ -40,10 +40,7 @@
     "url": "https://github.com/thanpolas/Modernizr-CJS/issues"
   },
   "keywords": [
-    "html5",
-    "css3",
-    "browser",
-    "feature detection"
+    "browserify"
   ],
   "author": {
     "name": "Modernizr",
@@ -56,7 +53,8 @@
     { "name": "Ryan Seddon" },
     { "name": "Alexander Farkas" },
     { "name": "Patrick Kettner" },
-    { "name": "Stu Cox" }
+    { "name": "Stu Cox" },
+    { "name": "Thanasis Polychronakis" }
   ],
   "license": "MIT"
 }
