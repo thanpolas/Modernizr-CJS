@@ -1,7 +1,7 @@
 {
-  "name": "modernizr",
+  "name": "modernizr-cjs",
   "version": "3.0.0pre",
-  "description": "Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser.",
+  "description": "This is a Modernizr port to CJS for selectively requiring test modules",
   "directories": {
     "test": "test"
   },
@@ -34,10 +34,10 @@
   "main": "./lib/cli",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Modernizr/Modernizr.git"
+    "url": "git://github.com/thanpolas/Modernizr-CJS.git"
   },
   "bugs": {
-    "url": "https://github.com/Modernizr/Modernizr/issues"
+    "url": "https://github.com/thanpolas/Modernizr-CJS/issues"
   },
   "keywords": [
     "html5",
