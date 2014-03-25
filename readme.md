@@ -10,10 +10,10 @@ If you want to just add Modernizr to your website then please go to http://moder
 
 ## Install
 
-use NPM
+use github repository:
 
 ```shell
-npm install modernizr-cjs --save-dev
+npm install https://github.com/thanpolas/Modernizr-CJS/archive/master.tar.gz --save-dev
 ```
 
 ## How to use
@@ -87,6 +87,8 @@ Pull Requests welcome...
 
 ## Release History
 
+- **v3.0.6**, *26 Mar 2014*
+    - The module is no longer available in npm, use the git url as instructed.
 - **v3.0.5**, *25 Mar 2014*
     - Introduced the `cjsTestRunner` module.
 - **v3.0.2**, *24 Mar 2014*
