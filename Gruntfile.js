@@ -182,7 +182,7 @@ module.exports = function( grunt ) {
         tag: true, //default: true
         push: true, //default: true
         pushTags: true, //default: true
-        npm: true, //default: true
+        npm: false, //default: true
         tagName: 'v<%= version %>', //default: '<%= version %>'
         commitMessage: 'releasing v<%= version %>', //default: 'release <%= version %>'
         tagMessage: 'v<%= version %>' //default: 'Version <%= version %>'
