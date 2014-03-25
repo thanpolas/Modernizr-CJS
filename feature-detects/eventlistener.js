@@ -17,4 +17,4 @@ var test = module.exports = function(cb) {
   cb('addEventListener' in window);
 };
 
-test.name = 'eventlistener';
+test.testname = 'eventlistener';

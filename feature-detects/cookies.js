@@ -29,4 +29,4 @@ var test = module.exports = function(cb) {
   }
 };
 
-test.name = 'cookies';
+test.testname = 'cookies';

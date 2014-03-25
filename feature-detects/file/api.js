@@ -22,4 +22,4 @@ var test = module.exports = function(cb) {
   cb(!!(window.File && window.FileList && window.FileReader));
 };
 
-test.name = 'fileapi';
+test.testname = 'fileapi';

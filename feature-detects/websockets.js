@@ -28,4 +28,4 @@ var test = module.exports = function(cb) {
   cb('WebSocket' in window && window.WebSocket.CLOSING === 2);
 };
 
-test.name = 'websockets';
+test.testname = 'websockets';

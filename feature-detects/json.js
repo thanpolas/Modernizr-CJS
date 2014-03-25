@@ -19,4 +19,4 @@ var test = module.exports = function(cb) {
   cb('JSON' in window && 'parse' in JSON);
 };
 
-test.name = 'json';
+test.testname = 'json';

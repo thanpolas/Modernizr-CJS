@@ -30,4 +30,4 @@ var test = module.exports = function(cb) {
   );
 };
 
-test.name = 'es5date';
+test.testname = 'es5date';

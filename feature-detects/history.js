@@ -38,4 +38,4 @@ var test = module.exports = function(cb) {
   cb(window.history && 'pushState' in window.history);
 };
 
-test.name = 'history';
+test.testname = 'history';

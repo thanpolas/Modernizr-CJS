@@ -18,4 +18,4 @@ var test = module.exports = function(cb) {
   cb(!!(Function.prototype && Function.prototype.bind));
 };
 
-test.name = 'es5function';
+test.testname = 'es5function';

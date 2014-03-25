@@ -18,4 +18,4 @@ var test = module.exports = function(cb) {
   cb(function(){'use strict'; return !this; }());
 };
 
-test.name = 'es5strict';
+test.testname = 'es5strict';

@@ -60,4 +60,4 @@ var test = module.exports = function(cb) {
   cb(bool);
 };
 
-test.name = 'video';
+test.testname = 'video';

@@ -80,4 +80,4 @@ var test = module.exports = function(cb) {
   }
 };
 
-test.name = 'flash';
+test.testname = 'flash';

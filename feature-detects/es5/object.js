@@ -31,4 +31,4 @@ var test = module.exports = function(cb) {
   );
 };
 
-test.name = 'es5object';
+test.testname = 'es5object';

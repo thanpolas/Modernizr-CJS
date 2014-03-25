@@ -18,4 +18,4 @@ var test = module.exports = function(cb) {
   cb(!!window.WebGLRenderingContext);
 };
 
-test.name = 'webgl';
+test.testname = 'webgl';

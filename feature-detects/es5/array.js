@@ -29,4 +29,4 @@ var test = module.exports = function (cb) {
   );
 };
 
-test.name = 'es5array';
+test.testname = 'es5array';

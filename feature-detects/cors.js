@@ -18,4 +18,4 @@ var test = module.exports = function(cb) {
   cb('XMLHttpRequest' in window && 'withCredentials' in new XMLHttpRequest());
 };
 
-test.name = 'cors';
+test.testname = 'cors';

@@ -18,4 +18,4 @@ var test = module.exports = function(cb) {
   cb(!!(String.prototype && String.prototype.trim));
 };
 
-test.name = 'es5string';
+test.testname = 'es5string';

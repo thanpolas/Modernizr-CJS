@@ -2,7 +2,7 @@ var partial = require('./partial');
 
 /**
  * Runs all tests and provides the results.
- * 
+ *
  * @param {Array.<Function>} tests The tests to run.
  * @param {Function(Object)} cb The callback with the result object.
  */
@@ -12,7 +12,7 @@ module.exports = function(tests, cb) {
   var results = {};
 
   function resultCb(testNum, result) {
-    results[tests[testNum].name] = result;
+    results[tests[testNum].testname] = result;
     testsFinished++;
     if (testsFinished === totalTests) {
       cb(results);
