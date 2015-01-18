@@ -34,8 +34,12 @@ var test = module.exports = function(cb) {
       bool.blocked = (result === 'blocked');
     }
     if (embed && body.contains(embed)) {
-      body.removeChild(embed);
+      try {
+        body.removeChild(embed);
+      } catch(ex) {}
     }
+
+    cb(bool);
   };
   var easy_detect;
   var activex;
