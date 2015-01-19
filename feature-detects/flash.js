@@ -13,7 +13,6 @@ var createElement = require('../src/createElement');
 var docElement = require('../src/docElement');
 var getBody = require('../src/getBody');
 
-
 /*!
   {
   "name": "Flash",
